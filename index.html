@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Textos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="assets/Frame 6.png" alt="" srcset="">
+        </div>
+    </header>
+
+    <main id="main">
+        
+        <section id="decodificador">
+        
+            <div id="div_entrada">    
+
+                <textarea id="entrada" wrap="soft" placeholder="Digite seu texto" spellcheck="false" autofocus></textarea>
+
+                <p class="texto_aviso">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="Aviso!" srcset="">
+                    Apenas letras minusculas e sem acentuação
+                </p>
+
+            </div>
+
+            <div class="div_botoes">
+                <button onclick="criptografa()" class="botao" id="bt_cripto">Criptografar</button>
+                <button onclick="descriptografa()" class="botao" id="bt_decripto">Descriptografar</button>
+            </div>
+
+        </section>
+
+        <section id="section_saida">
+            <div class="div_saida" id="sem_texto">
+                <img src="assets/High quality products 1 1.png" alt="" srcset="">
+                <h2 class="titulo">Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="div_saida" id="com_texto">
+                <textarea name="" id="saida" readonly wrap  ></textarea>
+                <button onclick="copiar()" class="botao" id="bt_copiar">Copiar texto</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Desenvolvido por 
+            <a href="">João Pedro (ODragonborn)</a>.
+        </h2>
+    </footer>
+    <script src="./script.js"></script>    
+</body>
+
+</html>
