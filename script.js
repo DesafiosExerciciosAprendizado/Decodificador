@@ -16,8 +16,9 @@ function desaparece_resultado()
 function criptografa()
 {
   aparece_resultado();
-  let arr = document.getElementById("entrada").value.split("");
+  const entrada = document.getElementById("entrada");
   const saida = document.getElementById("saida"); 
+  let arr = entrada.value.split("");
 
   // a -> ai, e -> enter, i -> imes, o -> ober, u -> ufat.
   for(let i = 0; i < arr.length; i++)
@@ -29,14 +30,16 @@ function criptografa()
      else if(arr[i] == "u") arr.splice(++i, 0, "fat");
    }
   saida.value = arr.join("");
+  entrada.value = "";
   botao.innerText = "Copiar texto"
 }
 
 function descriptografa()
 {
   aparece_resultado();
-  let arr = document.getElementById("entrada").value.split("");
+  const entrada = document.getElementById("entrada");
   const saida = document.getElementById("saida"); 
+  let arr = entrada.value.split("");
   // ai -> a, enter -> e, imes -> i, ober -> o, ufat -> u.
   for(let i = 0; i < arr.length; i++)
    {
@@ -47,6 +50,7 @@ function descriptografa()
      else if(arr[i] == "u") arr.splice(++i, 3, "");
    }
   saida.value = arr.join("");
+  entrada.value = "";
   botao.innerText = "Copiar texto"
 }
 

@@ -28,7 +28,6 @@ body
     margin-top: 5vh;
     margin-left: 10vh;
     height: 100%;
-    /*background-color: yellow;*/
 }
 
 #main
@@ -37,7 +36,6 @@ body
     justify-content: space-between;
     padding: 10px;
     margin: 0;
-    /*background-color: red;*/
     min-height: 80vh;
     max-height: max-content;
 }
@@ -53,9 +51,6 @@ body
     max-width: max-content;
     padding: 10px;
     margin-left: 25vh;
-
-    /*background-color: blue;*/
-    
 }
 
 #section_saida
@@ -69,7 +64,6 @@ body
     max-width: max-content;
     padding: 10px;
     margin-right: 10vh;
-    /*background-color: green;*/
 }
 
 #div_entrada
@@ -109,7 +103,7 @@ body
     color: var(--cor-terciaria);
     resize: none;
     padding: 10px;
-    /*outline: none;*/
+    outline: none;
     overflow: auto;
     min-width: 40vw;
     max-width: max-content;
@@ -192,7 +186,6 @@ footer > h2
 
 #bt_copiar
 {
-/*background-color: var(--cor-fundo);*/
     color: var(--cor-terciaria);
     margin-top: 3vh;
 }
@@ -264,6 +257,11 @@ a:hover
         text-decoration: none;
     }
 
+    #section_saida
+    {
+        margin: 1vh;
+    }
+
     .botao
     {
         border-color: var(--cor-terciaria);
@@ -303,7 +301,6 @@ a:hover
         margin-top: 5vh;
         margin-left: 10px;
         height: 100%;
-        /*background-color: yellow;*/
     }
 
     #entrada
@@ -345,7 +342,6 @@ a:hover
         justify-content: center;
         padding: 10px;
         margin: 0;
-        /*background-color: red;*/
         min-height: 80vh;
         max-height: max-content;
     }
@@ -363,7 +359,6 @@ a:hover
         min-width: 80vw;
         padding: 10px;
         margin: 1vh;
-        /*background-color: green;*/
     }
     .botao
     {
